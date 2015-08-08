@@ -1,0 +1,416 @@
+<ui version="4.0" >
+ <class>menu</class>
+ <widget class="QWidget" name="menu" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>535</width>
+    <height>471</height>
+   </rect>
+  </property>
+  <property name="sizePolicy" >
+   <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize" >
+   <size>
+    <width>535</width>
+    <height>471</height>
+   </size>
+  </property>
+  <property name="maximumSize" >
+   <size>
+    <width>535</width>
+    <height>471</height>
+   </size>
+  </property>
+  <property name="focusPolicy" >
+   <enum>Qt::TabFocus</enum>
+  </property>
+  <property name="windowTitle" >
+   <string>Menu</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset>images/edit.png</iconset>
+  </property>
+  <widget class="QLabel" name="label1" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>121</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Below is the Menu :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ImageLabel" >
+   <property name="geometry" >
+    <rect>
+     <x>370</x>
+     <y>20</y>
+     <width>151</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <property name="frameShape" >
+    <enum>QFrame::Panel</enum>
+   </property>
+   <property name="text" >
+    <string/>
+   </property>
+  </widget>
+  <widget class="QTableView" name="table_menu" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>350</width>
+     <height>130</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radio_stable" >
+   <property name="geometry" >
+    <rect>
+     <x>12</x>
+     <y>41</y>
+     <width>101</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Stable Food</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radio_dishes" >
+   <property name="geometry" >
+    <rect>
+     <x>120</x>
+     <y>41</y>
+     <width>101</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Dishes Food</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radio_soup" >
+   <property name="geometry" >
+    <rect>
+     <x>230</x>
+     <y>41</y>
+     <width>131</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Soup and Porridge</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label2" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>216</y>
+     <width>201</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font" >
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="text" >
+    <string>Current Food Item Order Quantity : *</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_order" >
+   <property name="geometry" >
+    <rect>
+     <x>270</x>
+     <y>210</y>
+     <width>151</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Order to Below Order List</string>
+   </property>
+  </widget>
+  <widget class="QTableView" name="table_order" >
+   <property name="geometry" >
+    <rect>
+     <x>60</x>
+     <y>250</y>
+     <width>340</width>
+     <height>170</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_submit" >
+   <property name="geometry" >
+    <rect>
+     <x>421</x>
+     <y>430</y>
+     <width>107</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Confirm to Submit</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_update" >
+   <property name="geometry" >
+    <rect>
+     <x>280</x>
+     <y>430</y>
+     <width>131</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Update Quantity</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_delete" >
+   <property name="windowModality" >
+    <enum>Qt::NonModal</enum>
+   </property>
+   <property name="geometry" >
+    <rect>
+     <x>421</x>
+     <y>300</y>
+     <width>105</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="sizePolicy" >
+    <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font" >
+    <font>
+     <stylestrategy>PreferDefault</stylestrategy>
+    </font>
+   </property>
+   <property name="text" >
+    <string>Confirm to Delete</string>
+   </property>
+   <property name="autoDefault" >
+    <bool>false</bool>
+   </property>
+   <property name="default" >
+    <bool>false</bool>
+   </property>
+   <property name="flat" >
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label3" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>436</y>
+     <width>211</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Update Selected Order Item Quatity : *</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>260</y>
+     <width>41</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="lineWidth" >
+    <number>6</number>
+   </property>
+   <property name="text" >
+    <string>&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-weight:600; color:#a52a2a;">Your&lt;/span>&lt;/p>
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600; color:#a52a2a;">Order &lt;/p>
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600; color:#a52a2a;">List   :&lt;/p>&lt;/body>&lt;/html></string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2" >
+   <property name="geometry" >
+    <rect>
+     <x>420</x>
+     <y>250</y>
+     <width>97</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="lineWidth" >
+    <number>6</number>
+   </property>
+   <property name="text" >
+    <string>Delete a Selected 
+             Order Item</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label5" >
+   <property name="geometry" >
+    <rect>
+     <x>420</x>
+     <y>380</y>
+     <width>97</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="lineWidth" >
+    <number>6</number>
+   </property>
+   <property name="text" >
+    <string>Confirm to Submit
+      This Order List</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="order_quantity" >
+   <property name="geometry" >
+    <rect>
+     <x>220</x>
+     <y>210</y>
+     <width>45</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="palette" >
+    <palette>
+     <active>
+      <colorrole role="Button" >
+       <brush brushstyle="SolidPattern" >
+        <color alpha="255" >
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="Button" >
+       <brush brushstyle="SolidPattern" >
+        <color alpha="255" >
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="Button" >
+       <brush brushstyle="SolidPattern" >
+        <color alpha="255" >
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
+   </property>
+   <property name="layoutDirection" >
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="autoFillBackground" >
+    <bool>false</bool>
+   </property>
+   <property name="text" >
+    <string>1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="update_quantity" >
+   <property name="geometry" >
+    <rect>
+     <x>230</x>
+     <y>430</y>
+     <width>45</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="palette" >
+    <palette>
+     <active>
+      <colorrole role="Button" >
+       <brush brushstyle="SolidPattern" >
+        <color alpha="255" >
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="Button" >
+       <brush brushstyle="SolidPattern" >
+        <color alpha="255" >
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="Button" >
+       <brush brushstyle="SolidPattern" >
+        <color alpha="255" >
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
+   </property>
+   <property name="layoutDirection" >
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="autoFillBackground" >
+    <bool>false</bool>
+   </property>
+   <property name="text" >
+    <string>1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_clear" >
+   <property name="geometry" >
+    <rect>
+     <x>420</x>
+     <y>340</y>
+     <width>107</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>&lt;&lt;Clear All Orders</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
